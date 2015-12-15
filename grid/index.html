@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+<body>
+	<header>
+		<div class="container-fluid"> <!-- la clase container hace que el contenido del header estea centrado, tambien se pueder usar la clase container-fluid-->
+			<h1>Header</h1>
+		</div>
+	</header>
+
+	<div class="container">
+		<section class="main row">
+			<article class="col-xs-12 col-sm-8 col-md-9">
+				<p>
+					<h3>Articulo</h3>
+					Esta es el texto que esta dentro de la etiqueta article, 
+					la cual a su vez esta dentro de la etiqueta section, que 
+					tiene como clase a main, en main abra 2 columnas principales
+					una para un articulo, y otra para el aside. 
+					Todo este contenido debe estar dentro de una clase container, 
+					en un div, para que este centrado. Si ponemos la clase container-fluid,
+					va a ocupar el 100% de la pagina, solo lo dejamos en container. <br />
+					Para dividir en columnas primero agregamos a la clase main en section row,
+					luego en article y en aside agregamos la clase col-md-9 y col-md-3, que 
+					seran los tamaños de las columnas. (md es de medium o mediana)<br />
+					Existen 4 tipos de columnas que tambien se van a agregar a la clase de article
+					y aside, col-xs (xs es de extra small, es como para celulares), luego tenemos
+					col-sm (sm es de small, es como para las tablets), por ultimo esta col-lg (lg 
+					de largo, para dispositivos como computadoras), despues se agrega el - y el numero
+					de columas que va a ocupar en cada tipo de columna, siempre debe sumar 12.
+				</p>
+			</article>
+
+			<aside class="col-xs-12 col-sm-4 col-md-3">
+				<p>
+					<h3>Aside</h3>
+					La etiqueta aside define algun contenido aparte del contenido en donde esta,
+					el contenido de aside debe estar relacionado al contenido de alrededor. <br />
+					Nota: se puede eliminar col-lg-3 ya que col-md-3 tambien tiene el mismo tamaño,
+					por lo tanto si borramos col-lg, cuando no se encuentre este, se le va a asignar
+					el valor de su antecesor, osea automaticamente se le va a asignar col-lg-3, 
+					lo mismo con col-md-9 y col-lg-9, podemos borrar este ultimo, y luego se le va 
+					a asignar el valor de su antecesor es decir de md.
+				</p>
+			</aside>
+		</section>
+
+		<div class="row">
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Columna</h3>
+					lo que hemos hecho ahora es crear una nueva fila, aparte de la seccion con clase main de arriba
+					ahora agregamos una nueva fila, la cual contendra cuatro columnas. Para ello primero hemos
+					creado un nuevo div, con clase row y dentro 4 div mas con clase igual al tamaño de la columna.
+				</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Columna</h3>
+					Luego agregamos tambien dentro de class, color1 para poder diferenciar, solo a la primera y
+					a la tercera. Luego agregamos tambien los col-xs y  col-sm, el col-lg ya no lo agregamos
+					por que sera igual al col-md
+				</p>
+			</div>
+
+			<!--<div class="clearfix visible-sm-block"></div> -->
+
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Columna</h3>
+					Para que no se malogre la pagina, cuando una columna tiene mas texto que la otra, por ejemplo en este 
+					caso se malogra y cuando pasamos a sm, se va a malograr y se van a mostrar la columna 1 y la 
+					columna 2 y debajo la columna 3, para que solo se muestre columna1 y columna2, debajo de columna2,
+					vamos a agregar un div con class="clearfix", la cual sirve para limpiar algunos errores que tienen
+					los sitios web por defecto de tamaño. luego dentro de la misma clase ponemos visible-sm-block
+				</p>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Columna</h3>
+					Si borramos esta columna, solo apareceran las 3 primeras, pero la tercera la queremos mover hacia
+					la derecha para que ocupe todo el espacio, para eso comentamos esta columna, para eso usamos la clase
+					col-md-offset-3, 3 es el numero de columnas que queremos desplazar
+				</p>
+			</div> 
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container">
+			<h3>Manuel Medina Vega</h3>
+		</div>	
+	</footer>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
