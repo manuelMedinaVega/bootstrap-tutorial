@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<!--
+	La tabla la ponemos dentro de un div class container para que se centre y se vea mejor
+	La tabla por lo general no tiene estilos, nosotros lo agregamos poniendo las clases dentro de las etiquetas
+	La clase table en la etiqueta table, permite que la tabla se muestre al 100% y se separen las filas	
+	La clase table-striped alterna los colores de las filas
+	Para agregar bordes a la tabla usamos la clase table-bordered
+	La clase table-hover agrega un hover para las filas (un efecto cada vez que pasamos de una fila a otra)
+	La clase table-condensed permite que los espacios entre el borde y los valores se reduzcan, haciendo asi la tabla mas pequeña
+	Tambien podemos agregar clases a los tr, th y td
+	La clase active permite que se muestre seleccionada un tr,th o td por defecto
+	Para agregar colores tambien lo hacemos con clases sucess, info, warning y danger
+	Para hacer una tabla responsive, tenemos que meter nuestra tabla dentro de otro div con clase table-responsive,
+	esto permite agregar un scroll a la tabla cuando el tamaño de la pantalla se hace mas pequeño
+	 -->
+	<div class="container">
+		<div class="table-responsive">
+			<table class="table table-striped table-bordered table-hover table-condensed">
+				<tr class="success">
+					<th># ID</th>
+					<th>Nombre</th>
+					<th class="danger">Usuario</th>
+				</tr>
+				<tr class="active">
+					<td>1</td>
+					<td>Nombre 1</td>
+					<td>Username 1</td>
+				</tr>
+				<tr class="info">
+					<td>2</td>
+					<td>Nombre 2</td>
+					<td>Username 2</td>
+				</tr>
+				<tr>
+					<td class="warning">3</td>
+					<td class="active">Nombre 3</td>
+					<td>Username 3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Nombre 4</td>
+					<td>Username 4</td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+	
+</body>
