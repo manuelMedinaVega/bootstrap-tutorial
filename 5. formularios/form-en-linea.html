@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html5 lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<!--
+		Para tener el formulario con los elementos uno al lado del otro es decir en una sola linea
+		a la etiqueta form le agregamos la clase form-inline, tambien tenemos que agregar
+		los form-control a los elementos
+		Al agregar a un label la clase sr-only (solo para screen reader) se oculta el label
+		al div que contiene al checkbox se le agrega la clase checkbox
+		La clase input-group permite agrupar varios inputs que estan uno al lado del otro para que se
+		vean en una sola linea
+		La clase input-group-addon permite poner el @ al lado del input
+	 -->
+
+	<div class="container">
+		<br />
+		<form action="" class="form-inline">
+			<div class="form-group">
+				<label class="sr-only" for="nombre">Nombre:</label>
+				<input class="form-control" id="nombre" type="text" placeholder="Nombre:">
+			</div>
+			
+			<div class="form-group">
+				<div class="input-group">
+					<label class="sr-only" for="correo">Correo:</label>
+					<div class="input-group-addon">@</div>
+					<input class="form-control" id="nombre" type="text" placeholder="Correo:">
+				</div>
+			</div>
+			
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" name="" id="">Recuerdame
+				</label>
+			</div>
+			
+			<button class="btn btn-primary">Enviar</button>
+		</form>
+	</div> 
+	
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

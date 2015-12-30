@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html5 lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<!--
+	Para hacer que cada checkbox aparezca uno abajo del otro lo hacemos poniendo en el div la clase checkbox
+	luego metemos cada checkbox dentro de un label, luego metemos cada label dentro de un div con la clase checkbox
+	Para los radiobutton es similar ponemos el radio dentro de un label, luego cada label lo ponemos dentro de un
+	div con clase radio
+	Si queremos poner los checkbox unos al lado del otro tenemos que quitar los div, y en la etiqueta label
+	ponemos una clase llamada checkbox-inline, lo mismo para los radio buton pero con la clase radio-inline,
+	solo tendriamos que meter todos los label dentro de un div con clase form-group
+	 -->
+	 <div class="container">
+	 	<br>
+	 	<form action="">
+			<div class="form-group">
+				<label>label basica</label>
+				<input type="text" class="form-control" placeholder="Input Basico">
+			</div>
+			
+			<div class="form-group">
+				<textarea name="" id="" class="form-control" placeholder="Textarea"></textarea>
+			</div>
+			
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" name="" id="">Checkbox #1
+				</label>				
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" name="" id="">Checkbox #2
+				</label>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" name="" id="">Checkbox #3
+				</label>
+			</div>
+			
+			<div class="radio">
+				<label for="radio1">
+					<input type="radio" name="opcion" id="radio1">Radio 1
+				</label>
+			</div>
+			
+			<div class="radio">
+				<label for="radio2">
+					<input type="radio" name="opcion" id="radio2">Radio 2
+				</label>
+			</div>
+			
+			<div class="radio">
+				<label for="radio3">
+					<input type="radio" name="opcion" id="radio3">Radio 3
+				</label>
+			</div>
+			
+			<div class="form-group">
+				<button type="submit">Enviar</button>
+			</div>
+			
+		</form>
+	 </div>
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

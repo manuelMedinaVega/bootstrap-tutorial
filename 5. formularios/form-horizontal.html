@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html5 lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<!--
+		La clase control-label en la etiqueta label permite que un label ocupe el 100% de la pantalla
+		Para darle tamaño a los input hemos metido cada input dentro de un div en ese div le vamos a agregar la clase
+		con el tamaño para el input, para que le asignemos tamaño a un label tenemos que tener en el label la clase
+		control-label y luego agregar la clase con el tamaño del label. Tambien debemos agregar a la clase del form
+		la clase form-horizontal esto permite que cada form-group esta bien alineado. El control-label tambien va 
+		a permitir que los label estean centrados
+		Para cambiar el tamaño del boton hacemos lo mismo lo encerramos en un div form-group y luego dentro de otro div
+		donde pondremos el col-md-2 y luego col-md-offset-2 para moverlo 2 posiciones a la derecha, hacemos lo mismo para
+		el checkbox.
+		La clase form-control-static en el p permite colocar un estilo por defecto 
+		Para inhabilitar algun campo solo debemos agregar el atributo disabled
+		La etiqueta fieldset y dentro disabled permiten que se inhabiliten todo lo q esta dentro de la etiqueta
+		Para validar nuestro formulario podemos poner clase en cada form-group, un prerequisito es q los label tengan la clase
+		control-label y tenemos tres tipos de errores: has-success, has-warning y has-error
+	 -->
+
+	<div class="container">
+		<br />
+		<form action="" class="form-horizontal">
+			<fieldset>
+				<div class="form-group has-success">
+					<label for="nombre" class="control-label col-md-2">Nombre:</label>
+					<div class="col-md-10">
+						<input class="form-control" id="nombre" type="text" placeholder="Nombre:">
+					</div>		
+				</div>
+				
+				<div class="form-group has-warning">
+					<label for="nombre" class="control-label col-md-2">Nombre:</label>
+					<div class="col-md-10">
+						<p class="form-control-static">Manuel Medina Vega</p>
+					</div>
+				</div>
+				
+				<div class="form-group has-error">
+					<label for="correo" class="control-label col-md-2">Correo:</label>
+					<div class="col-md-10">
+						<input type="text" class="form-control" id="correo" placeholder="Correo:">
+					</div>
+				</div>
+
+				<div class="form-group has-success">
+					<div class="checkbox col-md-2 col-md-offset-2">
+						<label>
+							<input type="checkbox">Recuerdame
+						</label>
+					</div>
+				</div>
+					
+				<div class="form-group">
+					<div class="col-md-2 col-md-offset-2">
+						<button class="btn btn-primary" disabled>Enviar</button>
+					</div>		
+				</div>
+			
+			</fieldset>
+			
+		</form>
+	</div> 
+	
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

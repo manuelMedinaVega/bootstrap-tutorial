@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html5 lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<!--
+	El atributo for en la etiqueta label sirve para seleccionar el label con otra etiqueta
+	Primero ponemos el form dentro de un div class container para centrar el formulario
+	A los elementos input, select y textarea se les va a agregar una clase (form-control), 
+	lo que hace esta clase es aplicar bordes, dar focus y separar cada elemento
+	Lista de controles soportados por bootstrap: text, password, datetime, datetime-local, date, month, 
+	time, week, numer, email, url, search, tel, color
+	Ponemos el label y el input nombre dentro de un div con clase form-group lo que hace esta clase
+	es formar un grupo para separar los formularios, para separar los contenidos
+	Para los botones primero se le agrega la clase btn y luego el tipo de boton que pueden ser
+	btn-primary
+	Si queremos indicar algunas instrucciones para el formulario como en la parte del archivo, al p
+	se le puede agrega la clase help-block
+	 -->
+
+	<div class="container">
+		<br />
+		<form action="" class="">
+			<div class="form-group">
+				<label for="nombre">Nombre:</label>
+				<input class="form-control" id="nombre" type="text" placeholder="Nombre">
+			</div>
+		
+			<div class="form-group">
+				<label for="option">Elige una opcion</label>
+				<select class="form-control" name="" id="option">
+					<option value="">Opcion #1</option>
+					<option value="">Opcion #2</option>
+					<option value="">Opcion #3</option>
+					<option value="">Opcion #4</option>
+					<option value="">Opcion #5</option>
+				</select>
+			</div>
+			
+			<div class="form-group">
+				<label for="mensaje">Mensaje:</label>
+				<textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje:"></textarea>
+			</div>
+			
+			<div class="form-group">
+				<label for="archivo">Archivo:</label>
+				<input type="file" id="archivo">
+				<p class="help-block">Maximo 500MB</p>
+			</div>
+			
+
+			<button class="btn btn-primary">Enviar</button>
+		</form>
+	</div> 
+	
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
